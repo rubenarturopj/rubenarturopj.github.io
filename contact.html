@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!------------------favicons------------------------------------->
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="./img/favicon-96.png">
+    <!------------------stlysheet----------------------------------->
+    <link rel="stylesheet" href="./stylesheet.css" />
+</head>
+<body>
+    <header>
+        <h1>Rubén Pérez&nbsp;&nbsp;
+        <h2>Full-Stack JavaScript Web Developper</h2>
+    </header>
+    <!----------- big white container ------------->
+    <div class="big-container-white">
+        <nav>
+            <ul class="navMenu-list">
+                <li class="navMenu">
+                    <a style="text-decoration: none; color: #808080;" href="./about.html">ABOUT ME</a></li>
+                <li class="navMenu">
+                    <a style="text-decoration: none; color: #808080;" href="./professional.html">PROFESSIONAL</a></li>
+                <li class="navMenu">
+                    <a style="text-decoration: none; color: #808080;" href="./academic.html">ACADEMIC</a></li>
+                <li class="navMenu">
+                    <a style="text-decoration: none; color: #808080;" href="./contact.html">CONTACT ME</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form action="./form_received.php" method="post">
+                <div class="forms-container">
+                    <div class="instructions">SEND ME AN EMAIL</div>
+                    <div class="nameForm">
+                        <label id="name" for="name"></label>
+                        <input 
+                            required
+                            id="name" 
+                            name="name" 
+                            type="text" 
+                            placeholder="Name" 
+                            style="width: 410px; padding: 10px;  border-radius: 8px; border: 1px solid; border-color: #dfdede;">
+                    </div>
+                    <div class="subject">
+                        <label id="subjectForm" for="subjectForm"></label>
+                        <input 
+                            required 
+                            id="subjectForm" 
+                            name="subjectForm" 
+                            type="text" 
+                            placeholder="Subject" 
+                            style="width: 410px; padding: 10px; border-radius: 8px; border: 1px solid; border-color: #dfdede;">
+                    </div>
+                    <div class="email">
+                        <label id="emailForm" for="emailForm"></label>
+                        <input 
+                            required
+                            pattern='^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$'
+                            id="emailForm" 
+                            name="emailForm" 
+                            type="email"
+                            placeholder='Email'
+                            style="width: 410px; padding: 10px; border-radius: 8px; border: 1px solid; border-color: #dfdede;">
+                    </div>
+                    <div class="message">
+                        <label id="messageForm" for="messageForm"></label>
+                        <textarea 
+                                required 
+                                id="messageForm" 
+                                name="messageForm" 
+                                type="text" 
+                                placeholder="Message"
+                                style="width: 410px; height: 100px; padding: 10px; border-radius: 8px; border: 1px solid; border-color: #dfdede;"></textarea>
+                    </div>
+                    <div class="submitButton">
+                        <input id="submit" type="submit">
+                    </div>
+                    <div class="CVs">
+                        <a href="./My_CV_in_English.pdf" download="Ruben_cv_en" class="englishCV">Download my Enligsh CV</a>
+                        <a href="./Mon_CV_en_francais.pdf" download="Ruben_cv_fr" class="frenchcv">Téléchargez mon CV en français</a>
+                    </div>
+                </div>
+            </form>    
+        </main>
+        <div class="sidePicture">
+            <img class="profile-picture"
+            src="./profilepic.png"
+            alt="Profile Picture">
+        </div>
+    </div>
+    <footer></footer>    
+</body>
+</html>
