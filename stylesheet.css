@@ -206,10 +206,16 @@ form {
     margin-top: 15px;
     text-align: left;
 }
+#name {
+    width: 410px;
+}
 .subject {
     grid-area: subject;
     margin-top: 15px;
     text-align: left;
+}
+#subjectForm {
+    width: 410px;
 }
 .email {
     grid-area: email;
@@ -217,10 +223,16 @@ form {
     text-align: left;
     /* width: max-content; */
 }
+#emailForm {
+    width: 410px;
+}
 .message {    
     grid-area: message;
     margin-top: 15px;
     text-align: left;
+}
+#messageForm {
+    width: 410px;
 }
 .submitButton {
     grid-area: submitButton;
@@ -229,6 +241,7 @@ form {
 
 .CVs {
     margin-top: 25px;
+
 }
 
 .englishCV {
@@ -243,6 +256,8 @@ form {
     border: 1px solid; 
     border-color: #999999;
     box-shadow: 2px 2px 2px #c4c5c7;
+
+    /* margin-top: 25px; */
 
     transition-duration: 0.4s;
 }
@@ -264,6 +279,8 @@ form {
     border: 1px solid; 
     border-color: #999999;
     box-shadow: 2px 2px 2px #c4c5c7;
+
+    /* margin-top: 25px; */
 
     transition-duration: 0.4s;
 }
@@ -328,5 +345,21 @@ form {
     .instructions {
         margin-top: 30px;
         text-align: center;
+    }
+    #name {
+        width: 340px;
+    }
+    #subjectForm {
+        width: 340px;
+    }
+    #emailForm {
+        width: 340px;
+    }
+    #messageForm {
+        width: 340px;
+    }
+    .CVs {
+        display: flex;
+        flex-direction: column;
     }
 }
